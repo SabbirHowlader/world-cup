@@ -113,6 +113,7 @@ hr{
 @media only screen and (max-width:688px){
     .container{
         width:100%; 
+        overflow: hidden;
     }  
     
     .top-details{
@@ -120,10 +121,12 @@ hr{
         align-items: center;
         text-align: center;
         gap: 30px;
+        overflow-x: hidden;
     } 
     .container2{
         width: 100%;
         margin: 0%;
+        overflow: hidden;
     }
     .live-sidebar {
        align-items: center;
@@ -133,16 +136,19 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
     .live-info-detail{
         flex-direction: column;
         grid-template-columns: repeat(1,1fr);
         align-items: center;
+    
     }
 
     .container3{
         padding-bottom:100px;
         width: 100%;
+        overflow: hidden;
     }
     .logo{
         display: block;
@@ -153,4 +159,31 @@ hr{
         text-align: center;
     }
     
+}
+/* tablet dievice */
+@media only screen and(min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .top-details{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        overflow-x: hidden;
+    }
+    .container2{
+        width: 100%;
+    }
+    .live-info-detail{
+        flex-direction: column;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        overflow: hidden;
+    
+    }
+    .container3{
+        width: 100%;
+        overflow: hidden;
+    }
 }
